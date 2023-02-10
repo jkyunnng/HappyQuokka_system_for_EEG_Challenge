@@ -1,0 +1,4 @@
+test_results
+train.sh
+*.pyc
+__pychche__
