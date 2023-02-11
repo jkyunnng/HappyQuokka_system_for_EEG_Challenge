@@ -51,3 +51,4 @@ url = {https://doi.org/10.48804/K3VSND}
 
 ## References:
 * https://github.com/xcmyz/FastSpeech
+* https://github.com/exporl/auditory-eeg-challenge-2023-code
