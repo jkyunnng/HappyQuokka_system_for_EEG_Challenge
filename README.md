@@ -20,7 +20,6 @@ In `train.py`, change `--dataset_folder` to the absolute path of the dataset dir
 
 ## Citations :
 ```
-% FastSpeech
 @article{fastspeech,
   title={Fastspeech: Fast, robust and controllable text to speech},
   author={Ren, Yi and Ruan, Yangjun and Tan, Xu and Qin, Tao and Zhao, Sheng and Zhao, Zhou and Liu, Tie-Yan},
@@ -28,7 +27,7 @@ In `train.py`, change `--dataset_folder` to the absolute path of the dataset dir
   volume={32},
   year={2019}
 }
-% Prenorm
+
 @inproceedings{prelayernorm,
   title={On layer normalization in the transformer architecture},
   author={Xiong, Ruibin and Yang, Yunchang and He, Di and Zheng, Kai and Zheng, Shuxin and Xing, Chen and Zhang, Huishuai and Lan, Yanyan and Wang, Liwei and Liu, Tieyan},
@@ -38,7 +37,6 @@ In `train.py`, change `--dataset_folder` to the absolute path of the dataset dir
   organization={PMLR}
 }
 
-%EEG dataset
 @data{eegdata_K3VSND_2023,
 author = {Bollens, Lies and Accou, Bernd and Van hamme, Hugo and Francart, Tom},
 publisher = {KU Leuven RDR},
