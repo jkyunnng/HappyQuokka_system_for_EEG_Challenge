@@ -15,7 +15,7 @@ In `train.py`, change `--dataset_folder` to the absolute path of the dataset dir
 
 ## Note:
 * Auxiliary global conditioner only used for within-subjects generation.
-* When generate stimulus heldout-subjects, please change `--g_con` into False.
+* When generating stimulus for heldout-subjects, please change `--g_con` in `train.py` into False.
 
 
 ## Citations :
