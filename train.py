@@ -31,7 +31,7 @@ parser.add_argument('--lamda',type=float,default=0.2)
 parser.add_argument('--writing_interval', type=int, default=10)
 parser.add_argument('--saving_interval', type=int, default=10)
 
-parser.add_argument('--dataset_folder',type= str, default="/ssd/eeg_challenge", help='write down your absolute path of dataset folder')
+parser.add_argument('--dataset_folder',type= str, default="", help='write down your absolute path of dataset folder')
 parser.add_argument('--split_folder',type= str, default="split_data")
 parser.add_argument('--experiment_folder',default=None, help='write down experiment name')
 
