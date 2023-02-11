@@ -1,5 +1,5 @@
 <!-- # Autovocoder: Fast Waveform Generation from a Learned Speech Representation using Differentiable Digital Signal Processing -->
-# HappyQuokka: SYSTEM FOR ICASSP 2023 AUDITORY EEG CHALLENGE 
+# HappyQuokka: System for ICASSP 2023 Auditory EEG Challenge task2: Regression.
 <!-- Official Pytorch implementation of [Challenge Paper Title](link). -->
 Official Pytorch implementation of HappyQuokka system that submitted to the 2023 ICASSP Auditory EEG challenge task 2: regression.
 This repository is based on **[FastSpeech github](https://github.com/xcmyz/FastSpeech) [(Paper)](https://arxiv.org/abs/1905.09263)**.<br>
