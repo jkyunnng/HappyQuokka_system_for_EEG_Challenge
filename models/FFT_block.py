@@ -6,7 +6,7 @@ from collections import OrderedDict
 import pdb
 from models.SubLayers import MultiHeadAttention, PositionwiseFeedForward
 
-class FFTBlock(torch.nn.Module):
+class PreLNFFTBlock(torch.nn.Module):
 
     def __init__(self,
                  d_model,
@@ -61,7 +61,7 @@ class Decoder(nn.Module):
         self.slf_attn = MultiHeadAttention
         self.fc = nn.Linear(d_model, 1)   
         self.conv = nn.Conv1d(in_channel, d_model, kernel_size = 7, padding=3)
-        self.layer_stack = nn.ModuleList([FFTBlock(
+        self.layer_stack = nn.ModuleList([PreLNFFTBlock(
             d_model, d_inner, n_head, fft_conv1d_kernel,fft_conv1d_padding, dropout) for _ in range(n_layers)])
         self.sub_proj = nn.Linear(self.within_sub_num, d_model)
 
