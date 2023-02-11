@@ -17,7 +17,7 @@ class PreLNFFTBlock(torch.nn.Module):
                  dropout,
                  **kwargs):
 
-        super(FFTBlock, self).__init__()
+        super(PreLNFFTBlock, self).__init__()
 
         d_k = d_model // n_head
         d_v = d_model // n_head
