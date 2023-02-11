@@ -4,7 +4,7 @@
 Official Pytorch implementation of HappyQuokka system that submitted to the 2023 ICASSP Auditory EEG challenge task 2: regression.
 This repository is based on **[FastSpeech github](https://github.com/xcmyz/FastSpeech) [(Paper)](https://arxiv.org/abs/1905.09263)**.<br>
 
-<p align="center"><img src="HappyQuokka.png" width="85%"></p>
+<p align="center"><img src="HappyQuokka.png" width="70%"></p>
 
 
 ## Training :
