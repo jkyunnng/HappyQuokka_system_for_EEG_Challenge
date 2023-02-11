@@ -16,7 +16,7 @@ In `train.py`, change `--dataset_folder` to the absolute path of the dataset dir
 ## Note:
 * Auxiliary global conditioner only used for within-subjects generation.
 * When generating stimulus for heldout-subjects, please change `--g_con` in `train.py` into False.
-* For a quick start, you can refer to **[Auditory EEG challenge github](https://github.com/exporl/auditory-eeg-challenge-2023-code)**<br>, download the split_data.zip for experiment.
+* For a quick start, you can refer to **[Auditory EEG challenge github](https://github.com/exporl/auditory-eeg-challenge-2023-code)**, download the split_data.zip for experiment.
 
 
 ## Citations :
