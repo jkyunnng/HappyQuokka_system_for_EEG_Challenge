@@ -9,7 +9,7 @@ This repository is based on **[FastSpeech github](https://github.com/xcmyz/FastS
 
 ## Training :
 ```
-python train.py --experiment_foler "Your experiment name."
+python train.py --experiment_foler {Your experiment name}
 ```
 In `train.py`, change `--dataset_folder` to the absolute path of the dataset directory.<br>
 
