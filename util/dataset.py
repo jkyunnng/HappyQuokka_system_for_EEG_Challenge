@@ -49,29 +49,6 @@ class RegressionDataset(Dataset):
 
         return x, y, sub_id
 
-        '''
-        # 1. For within subject, return eeg, envelope and subject ID
-        if self.g_con == True:
-
-            if self.task == "train":
-                x, y, sub_id = self.__train_data__(recording_index)
-
-            else:
-                x, y, sub_id = self.__test_data__(recording_index)
-
-            return x, y, sub_id
-
-        # 2. For held-out subject, return eeg, envelope
-        else:
-
-            if self.task == "train":
-                x, y = self.__train_data__(recording_index)
-
-            else:
-                x, y = self.__test_data__(recording_index)
-            
-            return x, y, torch.FloatTensor(0)
-        '''
 
     def __train_data__(self, recording_index):
 
@@ -99,8 +76,8 @@ class RegressionDataset(Dataset):
 
     def __test_data__(self, recording_index):
         """
-        return: list of segment as self.input_length
-                for 10 second and 5 input_length, return [5, 5], [5, 5]
+        return: list of segments [[eeg, envelope] ...] depending on self.input_length 
+                e.g.,for 10 second-long input signal and input_length==5, return [[5, 5], [5, 5]]
         
         """
         framed_data = []
@@ -119,6 +96,5 @@ class RegressionDataset(Dataset):
 
         else:
             sub_idx = torch.FloatTensor([0])
-            # return framed_data[0], framed_data[1], sub_idx
 
         return framed_data[0], framed_data[1], sub_idx
